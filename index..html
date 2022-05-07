@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fixed responsive background</title>
+    <style>
+    /* (A) BACKGROUND IMAGE */
+    #back {
+      /* (A1) FILL ENTIRE WINDOW */
+      width: 100vw; height: 100vh;
+
+      /* (A2) FIXED BEHIND */
+      z-index: 1;
+      position: fixed; top: 0; left: 0;
+
+      /* (A3) BACKGROUND IMAGE */
+      background-image: url("city.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* (B) FRONT CONTENT */
+    #front {
+      /* (B1) IN FRONT */
+      z-index: 2;
+      position: absolute;
+
+      /* (B2) DOES NOT MATTER - FOR DEMO */
+      line-height: 60em;
+    }
+
+    /* (C) SHARED */
+    #back, #front { box-sizing: border-box; }
+    </style>
+  </head>
+  <body>
+    <div id="back"></div>
+    <main id="front">
+      <p>CITY LIFE</p> <p>CITY LIFE</p> <p>CITY LIFE</p>
+    </main>
+  </body>
+</html>
