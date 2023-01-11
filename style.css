@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 75px;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
   line-height: 1;
@@ -41,7 +41,7 @@ h1 {
 
 p {
   text-align: center;
-  margin: 18px;
+  margin: 20px;
   font-family: 'Muli', sans-serif;
   font-weight: normal;
   
